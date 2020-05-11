@@ -12,7 +12,7 @@ public static void main(String args[]) {
 
     String userId = scandetails.nextLine();  // Read user input
     DiscountCalculationImpl discountCalculationImpl = new DiscountCalculationImpl();
-    int priceAfterDiscount = discountCalculationImpl.calculateOverallDiscount(userId);
-    System.out.println(priceAfterDiscount);
+    int discount = discountCalculationImpl.calculateOverallDiscount(userId);
+    System.out.println("Total Discount   :$"  +discount);
 }
 }
